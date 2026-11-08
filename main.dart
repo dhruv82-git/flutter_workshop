@@ -33,16 +33,40 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("DEMO"),
+        title: const Center(child: Text("WELCOME TO THIS WORLD")),
       ),
-      body: Container(
+      body: Center(
+        child: Container(
         width : 200,
         height : 200,
         padding : EdgeInsets.all(10),
         decoration : BoxDecoration(
             color : Colors.orange,
               borderRadius: BorderRadius.circular(20),
-
+              boxShadow: [BoxShadow(
+                color: Colors.yellow,
+                blurRadius: 50,
+                spreadRadius: 20
+              )]
+        ),
+          child: Container(
+            width: 20,
+            height: 20,
+            padding : EdgeInsets.all(10),
+            decoration : BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Colors.white
+            ),
+          child: Center(
+            child: Text('Happy Diwali',
+                    style: TextStyle(
+                fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color : Colors.indigo,
+            ),
+          ),
+          ),
+        ),
         ),
       ),
     );
