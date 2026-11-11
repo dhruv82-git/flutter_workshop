@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Task 1 (Customize App Counter)',
+      title: 'Task 2 (Profile Card)',
       theme: ThemeData(
         colorScheme: .fromSeed(seedColor: Colors.teal),
       ),
